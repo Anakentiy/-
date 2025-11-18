@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Изображение автомобиля -->
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_placeholder"
+        android:background="#F5F7FA"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Название -->
+    <TextView
+        android:id="@+id/textDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hyundai Solaris"
+        android:textSize="24sp"
+        android:textColor="#2C3E50"
+        android:textStyle="bold"/>
+
+    <!-- Год и статус -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textViewYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2023"
+            android:textSize="18sp"
+            android:textColor="#7F8C8D"/>
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Доступен"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/status_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Ценник -->
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 500 ₽/день"
+        android:textSize="22sp"
+        android:textColor="#E74C3C"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Описание -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Современный и комфортный автомобиль с автоматической коробкой передач. Идеально подходит для городских поездок и путешествий."
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="#34495E"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
